@@ -3,24 +3,24 @@
     "version":          "0.0.0",
     "author":           "Alan Gutierrez <alan@prettyrobots.com>",
     "description":      "Multi-version concurrency control utilities for a Strata b-tree.",
-    "url":              "http://bigeasy.github.com/riffle",
+    "url":              "http://bigeasy.github.com/mvcc",
     "keywords":
     [
                         "btree", "leveldb", "levelup", "binary",
                         "database", "json", "b-tree", "concurrent", "persistence"
     ],
     "contributors":     [],
-    "homepage":         "https://github.com/bigeasy/riffle",
-    "bugs":             "https://github.com/bigeasy/riffle/issues",
+    "homepage":         "https://github.com/bigeasy/mvcc",
+    "bugs":             "https://github.com/bigeasy/mvcc/issues",
     "licenses":
     [{
                         "type": "MIT",
-                        "url": "http://github.com/bigeasy/riffle/raw/master/LICENSE"
+                        "url": "http://github.com/bigeasy/mvcc/raw/master/LICENSE"
     }],
     "repository":
     {
                         "type": "git",
-                        "url": "http://github.com/bigeasy/riffle.git"
+                        "url": "http://github.com/bigeasy/mvcc.git"
     },
     "dependencies":
     {
