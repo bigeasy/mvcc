@@ -2,7 +2,7 @@
     "name":             "mvcc",
     "version":          "0.0.0",
     "author":           "Alan Gutierrez <alan@prettyrobots.com>",
-    "description":      "Multi-version concurrency control utilities based on the Strata b-tree.",
+    "description":      "Multi-version concurrency control utilities for a Strata b-tree.",
     "url":              "http://bigeasy.github.com/riffle",
     "keywords":
     [
