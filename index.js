@@ -45,3 +45,42 @@ exports.forward = cadence(function (step, strata, comparator, versions, key) {
         })
     })
 })
+
+function Reverse (comparator, versions, iterator, next) {
+    this._iterator = iterator
+    this._comparator = comparator
+    this._versions = versions
+    this._next = next
+}
+
+Reverse.prototype.next = cadence(function (step) {
+    if (!this._next) return this._next
+    step(function () {
+        var next = this._next
+        step(function () {
+            this._iterator.next(valid(this._versions), step())
+        }, function (candidate) {
+            if (!candidate || this._comparator(candidate.value, next.value) != 0) {
+                this._next = candidate
+                step(null, next)
+            }
+        })()
+    })
+})
+
+Reverse.prototype.unlock = function () {
+    this._iterator.unlock()
+}
+
+exports.reverse = cadence(function (step, strata, comparator, versions, key) {
+    var composite = { value: key, version: Number.MAX_VALUE }
+    step(function () {
+        riffle.reverse(strata, composite, step())
+    }, function (iterator) {
+        step (function () {
+            iterator.next(valid(versions), step())
+        }, function (next) {
+            return new Reverse(comparator, versions, iterator, next)
+        })
+    })
+})
