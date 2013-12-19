@@ -25,7 +25,7 @@
     "dependencies":
     {
                         "cadence":            "0.0.26",
-                        "riffle":             "0.0.1"
+                        "riffle":             "0.0.2"
     },
     "devDependencies":
     {
