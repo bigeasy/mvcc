@@ -84,3 +84,11 @@ exports.reverse = cadence(function (step, strata, comparator, versions, key) {
         })
     })
 })
+
+exports.comparator = function (comparator) {
+    return function (a, b) {
+        var compare = comparator(a.value, b.value)
+        if (compare) return compare
+        return a.version - b.version
+    }
+}

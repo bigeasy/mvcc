@@ -1,19 +1,10 @@
 require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
     var mvcc = require('../..')
-    var comparator = {
-        versioned: function (a, b) {
-            if (a.value == b.value) {
-                return a.version - b.version
-            } else {
-                return a.value < b.value ? -1 : 1
-            }
-        },
-        unversioned: function (a, b) {
-            return a < b ? -1 : a > b ? 1 : 0
-        }
+    function comparator (a, b) {
+        return a < b ? -1 : a > b ? 1 : 0
     }
     var strata = new Strata({
-        comparator: comparator.versioned,
+        comparator: mvcc.comparator(comparator),
         leafSize: 3, branchSize: 3,
         directory: tmp
     })
@@ -22,7 +13,7 @@ require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
     }, function () {
         strata.open(step())
     }, function () {
-        mvcc.reverse(strata, comparator.unversioned, { 0: true }, 'i', step())
+        mvcc.reverse(strata, comparator, { 0: true }, 'i', step())
     }, function (iterator) {
         var records = []
         step(function () {
