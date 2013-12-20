@@ -1,9 +1,13 @@
 require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
     var mvcc = require('../..')
+    function extractor (record) {
+        return record.value
+    }
     function comparator (a, b) {
         return a < b ? -1 : a > b ? 1 : 0
     }
     var strata = new Strata({
+        extractor: mvcc.extractor(extractor),
         comparator: mvcc.comparator(comparator),
         leafSize: 3, branchSize: 3,
         directory: tmp
