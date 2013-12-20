@@ -1,5 +1,5 @@
-require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
-    var iterate = require('../../iterate'), version = require('../../version')
+require('../proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
+    var iterate = require('../../../iterate'), version = require('../../../version')
     function extractor (record) {
         return record.value
     }
@@ -17,7 +17,7 @@ require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
     }, function () {
         strata.open(step())
     }, function () {
-        iterate.reverse(strata, comparator, { 0: true }, 'i', step())
+        var forward = iterate.forward(strata, comparator, { 0: true }, 'a', step())
     }, function (iterator) {
         var records = []
         step(function () {
@@ -34,6 +34,6 @@ require('./proof')(1, function (step, serialize, deepEqual, Strata, tmp) {
             return records
         })
     }, function (records) {
-        deepEqual(records, [ 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a' ], 'records')
+        deepEqual(records, [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' ], 'records')
     })
 })
