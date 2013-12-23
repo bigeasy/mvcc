@@ -1,11 +1,18 @@
-Every time a process performs an operation on a given key in some temporary
-tree, Strata actually modifies that key, creating a "composite" key using its
-original value and the version number. Thus, each key in a tree is
-differentiated from the same key in other trees by its version; they are no
-longer the same key at all, and gain chronological (relatively, at least)
-information in addition to positional/relational information. Multiple processes
-can operate on multiple keys without conflicting in this manner, since each
-process is isolated to its own tree.
+MVCC is a collection of utilities for implement multi-version concurrency
+control (MVCC) using a Strata b-tree.
+
+MVCC is an implementation of transactions that uses a version number to track
+the updates specific to a particular transaction. The key for each record is a
+composite of the user specified key and the version number of the transaction.
+The version number is simply an ever-incrementing integer used to obtain a
+version for updates to all the b-trees for a transaction in a database.
+
+Changes to a tree mean appending a new record with the user key and a new
+version. Each key in a tree is differentiated from the same key in other trees
+by its version; they are no longer the same key at all, and gain chronological
+(relatively, at least) information in addition to positional/relational
+information. Multiple processes can operate on multiple keys without conflicting
+in this manner, since each process is isolated to its own tree.
 
 Multi-version concurrency control (MVCC) is a way of managing concurrency, in
 this case for b-trees in Strata. The idea is to design an algorithm that
