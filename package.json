@@ -27,7 +27,7 @@
     },
     "devDependencies":
     {
-                        "proof":              "0.0.36"
+                        "proof":              "0.0.47"
     },
     "scripts":
     {
