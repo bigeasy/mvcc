@@ -1,3 +1,3 @@
-require('proof')(1, function (ok) {
-    ok(require('../..'), 'require')
+require('proof')(1, function (assert) {
+    assert(require('../..'), 'require')
 })
