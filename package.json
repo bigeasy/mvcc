@@ -24,6 +24,7 @@
     },
     "dependencies":
     {
+                        "riffle":               "0.0.11"
     },
     "devDependencies":
     {
