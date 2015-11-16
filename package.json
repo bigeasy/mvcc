@@ -20,7 +20,7 @@
     },
     "dependencies":
     {
-                        "advance":              "0.0.7",
+                        "advance":              "0.0.16",
                         "dilute":               "0.0.7",
                         "riffle":               "0.0.11",
                         "revise":               "0.0.3",
