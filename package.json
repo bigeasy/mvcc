@@ -12,11 +12,7 @@
     "contributors":     [],
     "homepage":         "https://github.com/bigeasy/mvcc",
     "bugs":             "https://github.com/bigeasy/mvcc/issues",
-    "licenses":
-    [{
-                        "type": "MIT",
-                        "url": "http://github.com/bigeasy/mvcc/raw/master/LICENSE"
-    }],
+    "license":          "MIT",
     "repository":
     {
                         "type": "git",
