@@ -1,5 +1,6 @@
 exports.advance = require('advance')
 exports.dilute = require('dilute')
+exports.homogenize = require('homogenize')
 exports.revise = require('revise')
 exports.riffle = require('riffle')
 exports.skip = require('skip')
