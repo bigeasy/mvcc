@@ -13,6 +13,7 @@
     "homepage":         "https://github.com/bigeasy/mvcc",
     "bugs":             "https://github.com/bigeasy/mvcc/issues",
     "license":          "MIT",
+    "main":             "mvcc",
     "repository":
     {
                         "type": "git",
