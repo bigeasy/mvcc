@@ -1,4 +1,5 @@
 exports.advance = require('advance')
+exports.designate = require('designate')
 exports.dilute = require('dilute')
 exports.homogenize = require('homogenize')
 exports.revise = require('revise')
