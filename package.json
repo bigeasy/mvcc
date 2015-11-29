@@ -27,7 +27,7 @@
                         "homogenize":           "0.0.15",
                         "riffle":               "0.0.19",
                         "revise":               "0.0.5",
-                        "splice":               "0.0.22",
+                        "splice":               "0.0.23",
                         "twiddle":              "0.0.5"
     },
     "devDependencies":
