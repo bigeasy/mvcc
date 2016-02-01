@@ -22,7 +22,7 @@
     "dependencies":
     {
                         "advance":              "1.x",
-                        "designate":            "0.0.18",
+                        "designate":            "1.x",
                         "dilute":               "0.0.14",
                         "homogenize":           "0.0.15",
                         "riffle":               "0.0.19",
