@@ -28,7 +28,7 @@
                         "revise":               "1.x",
                         "riffle":               "1.x",
                         "splice":               "1.x",
-                        "twiddle":              "0.0.5"
+                        "twiddle":              "1.x"
     },
     "devDependencies":
     {
