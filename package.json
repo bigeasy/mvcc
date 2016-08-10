@@ -20,18 +20,18 @@
     },
     "dependencies":
     {
-                            "advance":                      "1.x",
-                            "designate":                    "1.x",
-                            "dilute":                       "1.x",
-                            "homogenize":                   "1.x",
-                            "revise":                       "1.x",
-                            "riffle":                       "1.x",
-                            "splice":                       "1.x",
-                            "twiddle":                      "1.x"
+                            "advance":                      "1.0.x",
+                            "designate":                    "1.0.x",
+                            "dilute":                       "1.0.x",
+                            "homogenize":                   "1.0.x",
+                            "revise":                       "1.0.x",
+                            "riffle":                       "1.0.x",
+                            "splice":                       "1.0.x",
+                            "twiddle":                      "1.0.x"
     },
     "devDependencies":
     {
-                            "proof":                        "1.x"
+                            "proof":                        "1.0.x"
     },
     "scripts":
     {
