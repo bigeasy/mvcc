@@ -17,7 +17,7 @@
     "repository":
     {
                             "type": "git",
-                            "url": "http://github.com/bigeasy/mvcc.git"
+                            "url": "bigeasy/mvcc"
     },
     "dependencies":
     {
