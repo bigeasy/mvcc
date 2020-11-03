@@ -3,7 +3,7 @@
     "version":              "1.0.0",
     "description":
 
-      "Multi-version concurrency control utilities for a Strata b-tree.",
+      "Common constants for multi-version concurrency control utilities for a Strata b-tree.",
 
     "keywords":
     [
@@ -21,14 +21,6 @@
     },
     "dependencies":
     {
-                            "advance":                      "3.0.0-alpha.0",
-                            "designate":                    "1.0.x",
-                            "dilute":                       "2.0.0-alpha.0",
-                            "homogenize":                   "2.0.0-alpha.0",
-                            "revise":                       "1.0.x",
-                            "riffle":                       "2.0.0-alpha.1",
-                            "splice":                       "1.0.x",
-                            "twiddle":                      "2.0.0-alpha.0"
     },
     "devDependencies":
     {

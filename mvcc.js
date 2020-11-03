@@ -1,8 +1,3 @@
-exports.advance = require('advance')
-exports.designate = require('designate')
-exports.dilute = require('dilute')
-exports.homogenize = require('homogenize')
-exports.revise = require('revise')
-exports.riffle = require('riffle')
-exports.splice = require('splice')
-exports.twiddle = require('twiddle')
+exports.FORWARD = 0
+exports.REVERSE = 1
+exports.SET = 2
