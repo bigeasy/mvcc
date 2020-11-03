@@ -1,0 +1,7 @@
+1597796577598 run  t/require.t.js
+1597796577639 plan t/require.t.js 1
+1597796577644 test t/require.t.js ok 1 require
+1597796577644 out  t/require.t.js # expected   1
+1597796577644 out  t/require.t.js # passed     1
+1597796577649 exit t/require.t.js 0 null
+1597796577649 eof  *
