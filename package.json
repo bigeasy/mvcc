@@ -1,14 +1,14 @@
 {
     "name":                 "mvcc",
-    "version":              "1.0.0",
+    "version":              "2.0.0-alpha.0",
     "description":
 
       "Common constants for multi-version concurrency control utilities for a Strata b-tree.",
 
     "keywords":
     [
-                            "btree", "leveldb", "levelup", "binary",
-                            "database", "json", "b-tree", "concurrent", "persistence"
+                            "btree", "leveldb", "levelup", "binary", "database",
+                            "json", "b-tree", "concurrent", "persistence"
     ],
     "author":               "Alan Gutierrez <alan@prettyrobots.com>",
     "homepage":             "https://github.com/bigeasy/mvcc",
