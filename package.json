@@ -1,6 +1,6 @@
 {
     "name":                 "mvcc",
-    "version":              "2.0.0-alpha.4",
+    "version":              "2.0.0-alpha.5",
     "description":
 
       "Common constants for multi-version concurrency control utilities for a Strata b-tree.",
